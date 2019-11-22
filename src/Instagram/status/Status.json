@@ -1,0 +1,32 @@
+[
+    {
+      "id":1,
+      "dp": "./users/beck.jpeg",
+      "altText": "Slide 1",
+      "username": "David Beckham"
+    },
+    {
+      "id":2,
+      "dp": "./users/cris.jpeg",
+      "altText": "Slide 2",
+      "username": "Cristiano"
+    },
+    {
+      "id":"3",
+      "dp": "./users/degea.jpeg",
+      "altText": "Slide 3",
+      "username": "David De Gea"
+    },
+    {
+      "id":"4",
+      "dp": "./users/espn.png",
+      "altText": "Slide 4",
+      "username": "ESPN"
+    },
+    {
+      "id":"5",
+      "dp": "./users/goal.png",
+      "altText": "Slide 5",
+      "username": "GOAL"
+    }
+]

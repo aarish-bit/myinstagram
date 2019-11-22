@@ -1,0 +1,33 @@
+.instapost{
+    padding-top: 100px;
+    width: 70%
+}
+
+.instapost-content{
+    border: 1px solid #DBDBDB;
+    width: 54%;
+    // height: 35%;
+    margin-left: 325px;
+    margin-top: 40px; 
+    .post-header{
+        border-bottom: 1px solid #DBDBDB;
+        padding: 13px 6px;
+        width: 100%;
+        img{
+            width: 45px;
+            height: 45px;
+            border-radius: 47%;
+            // margin-right: 45px;
+        }
+        .pusername {
+            margin-right: 387px;
+            margin-left: 20px;
+        }
+    }
+    .post-content{
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

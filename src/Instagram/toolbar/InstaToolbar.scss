@@ -1,0 +1,65 @@
+.InstaToolbar{
+    background-color: white;
+    height: 77px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    margin-top: 8px;
+    border-bottom: 1px solid #DBDBDB;
+}
+
+.InstaToolbar-content{
+    display: flex;
+    .insta-icons{
+        margin-left: 234px;
+        margin-top: 20px;
+        .user-logo{
+            width: 28px;
+            margin-left: 20px;
+        }
+    }
+}
+
+.InstaToolbar-logo{
+    display: flex;
+    .insta-logo{
+        display: block;
+        width: 35px;
+        margin-left: 268px;
+        margin-top: 23px;
+        height: 27px;
+    }
+    .line-between{
+       background-color: black;
+        height: 29px;
+        width: 1px;
+       margin-left: 14px;
+       margin-top: 22px;
+    }
+    .insta-head{
+        width: 105px;
+        height: 37px;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+}
+
+.search{
+    margin-left: 215px;
+    margin-top: 20px;
+    height: 33px;
+    opacity: 0.7;
+    
+}
+
+.search::input-placeholder { 
+    font-family: FontAwesome;
+    font-weight: normal;
+    overflow: visible;
+    vertical-align: top;
+    display: inline-block !important;
+    padding-left: 25px;
+    padding-top: 2px;
+    color: hsl(9, 40%, 60%);
+}
+
