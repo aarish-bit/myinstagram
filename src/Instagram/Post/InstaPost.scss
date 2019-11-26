@@ -1,33 +1,150 @@
 .instapost{
-    padding-top: 100px;
-    width: 70%
+  padding-top: 100px;
+  width: 65%
 }
 
 .instapost-content{
-    border: 1px solid #DBDBDB;
-    width: 54%;
-    // height: 35%;
-    margin-left: 325px;
-    margin-top: 40px; 
-    .post-header{
-        border-bottom: 1px solid #DBDBDB;
-        padding: 13px 6px;
-        width: 100%;
-        img{
-            width: 45px;
-            height: 45px;
-            border-radius: 47%;
-            // margin-right: 45px;
-        }
-        .pusername {
-            margin-right: 387px;
-            margin-left: 20px;
-        }
+  border: 1px solid #DBDBDB;
+  width: 85%;
+  height: 795px;
+  margin-top: 40px;
+  margin-left: 105px; 
+  display: flex;
+  flex-direction: column;
+  .post-header{
+    border-bottom: 1px solid #DBDBDB;
+    width: 100%;
+    height: 60px;
+    font-size: 15px;
+    span{
+      float: left;
     }
-    .post-content{
-        img{
-            width: 100%;
-            height: 100%;
-        }
+    img{
+        width: 40px;
+        height: 40px;
+        border-radius: 47%;
+        margin-top: 7px;
+        margin-left: 15px;
     }
+    .pusername {
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    .btn{
+      margin-top: 12px;
+      float: right;
+      width: 55px;
+    }
+  }
+  .post-content{
+    // height: 650px;
+    img{
+      height: 545px;
+      width: 100%;
+    }
+  }
+
+}
+
+.post-option{
+  margin-top: 12px;
+  padding-bottom: 10px;
+  .opt-heart{
+    float: left;
+    margin-left: 10px;
+    img{
+      width: 22px;
+      height: 24px;
+    }
+  }
+  .opt-comment{
+    float: left;
+    margin-left: 10px;
+    img{
+      width: 22px;
+      height: 22px;
+    }
+  }
+  .opt-share{
+    float: left;
+    margin-left: 10px;
+    img{
+      width: 22px;
+      height: 22px;
+    }
+  }
+  .opt-save{
+    float: right;
+    margin-right: 15px;
+    img{
+      width: 18px;
+    }
+  }
+}
+
+.likes{
+  // margin-left: 20px;
+  float: left;
+  width: 100%;
+  font-size: 15px;
+  label{
+    float: left;
+    margin-left: 17px;
+  }
+}
+
+.post-caption{
+  float: left;
+  // margin-top: 10px;
+  // margin-left: -57px;
+  width: 100%;
+  font-size: 15px;
+  label{
+    float: left;
+    margin-left: 17px;
+  }
+}
+
+.post-mins-ago{
+  // margin-top: 10px;
+  width: 100%;
+  font-size: 12px;
+  color: grey;
+  label{
+    float: left;
+    margin-left: 17px;
+  }
+}
+
+.comment-box{
+  width: 100%;
+  background-color: white;
+  border-top: 1px solid #DBDBDB;
+  input[type=text]{
+    float: left;
+    margin-left: 15px;
+    width: 535px;
+    border: none;
+    margin-top: 8px;
+  }
+  .btn{
+    color: #389AF1;
+    margin-top: 6px;
+    font-size: 14px;
+  }
+}
+
+.modal{
+  margin-top: 18%;
+  width: 405px;
+  margin-left: 39%;
+  .modal-body{
+    display: flex;
+    flex-direction: column;
+    span{
+      text-align: center;
+      border-bottom: 1px solid #DBDBDB;
+      padding: 12px 5px;
+    }
+  }
 }

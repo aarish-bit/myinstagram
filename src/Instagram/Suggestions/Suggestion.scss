@@ -1,62 +1,72 @@
-.instastatus{
+.suggestion{
     border: 1px solid #DBDBDB;
     // position: fixed;
     // top: 33%;
     // left: 63%;  
     // width: 19%;
-    height: 225px;
-    overflow-y: scroll;
+    height: 205px;
+    overflow-y: hidden;
     margin-top: 10px;
     .container{
       margin-top: 48px;
       background-color: white;
     }
-    .status-head{
+    .suggest-head{
       width: 303px;
       position: fixed;
-      top: 272px;
+      top: 507px;
       background-color: white;
       height: 45px;
       span{
         margin-top: 10px;
       }
-      .stories-tag{
+      .suggest-tag{
         float: left;
         margin-left: 20px;
         color: #A8A5C3;
         font-size: 14px;
       }
-      .watch-all{
-        margin-left: 135px;
-        font-size: 15px;
+      .see-all{
+        margin-left: 70px;
+        font-size: 13px;
       }
     }
    
 }
 
-.stories{
+.suggestuser{
   display: flex;
   // padding: 9px 18px;
   overflow-y: hidden;
   font-size: 14px;
   height: 52px;
+  // margin-left: 15px;
   img{
       width: 35px;
       height: 35px;
       border-radius: 50%;
-       margin-left: 15px;      
   }
   label{
-      margin-left: 13px;
+      // margin-left: 13px;
       margin-bottom: 0px;
   }
-  .story-disc{
+  .user-disc{
       display: flex;
       flex-direction: column;
+      // padding-right: 39px;
+      width: 140px;
       .mins-ago{
         margin-bottom: -4px;
         font-size: 12px;
         color: #A8A5C3; 
       }
+  }
+  .btn{
+    width: 65px;
+    height: 35px;
+    font-size: 14px;
+    margin-left: 35px;
+    border: none;
+    color: #389af1;
   }
 }

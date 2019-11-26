@@ -4,34 +4,49 @@
       "dp": "./users/beck.jpeg",
       "altText": "Slide 1",
       "username": "David Beckham",
-      "userpost": "./post/beck.jpeg"
+      "userpost": "./post/beck.jpeg",
+      "likes": "90 likes",
+      "caption": "Let's keep moving forward!!!.....",
+      "minago": "30 MINS AGO"
     },
     {
       "id":2,
       "dp": "./users/cris.jpeg",
       "altText": "Slide 2",
-      "username": "Cristiano",
-      "userpost": "./post/cris.jpeg"
+      "username": "Cristiano Ronaldo",
+      "userpost": "./post/cris.jpeg",
+      "likes": "90 likes",
+      "caption": "Let's keep moving forward!!!.....",
+      "minago": "30 MINS AGO"
     },
     {
       "id":"3",
       "dp": "./users/degea.jpeg",
       "altText": "Slide 3",
       "username": "David De Gea",
-      "userpost": "./post/degea.jpeg"
+      "userpost": "./post/degea.jpeg",
+      "likes": "90 likes",
+      "caption": "Let's keep moving forward!!!.....",
+      "minago": "30 MINS AGO"
     },
     {
       "id":"4",
-      "dp": "./users/espn.png",
+      "dp": "./users/espn.jpeg",
       "altText": "Slide 4",
-      "username": "ESPN",
-      "userpost": "./post/sky.jpeg"
+      "username": "ESPN India",
+      "userpost": "./post/sky.jpeg",
+      "likes": "90 likes",
+      "caption": "Let's keep moving forward!!!.....",
+      "minago": "30 MINS AGO"
     },
     {
       "id":"5",
-      "dp": "./users/goal.png",
+      "dp": "./users/goal.jpeg",
       "altText": "Slide 5",
-      "username": "GOAL",
-      "userpost": "./post/goal.jpeg"
+      "username": "GOAL Global",
+      "userpost": "./post/goal.jpeg",
+      "likes": "90 likes",
+      "caption": "Let's keep moving forward!!!.....",
+      "minago": "30 MINS AGO"
     }
 ]

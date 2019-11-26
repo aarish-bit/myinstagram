@@ -1,20 +1,28 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import './InstaStatus.scss'
 import Status from "./Status.json";
 
 export class InstaStatus extends Component {
     render() {
         return (
             <div className="instastatus">
-                {Status.map((Stories) => {
+               <div className="status-head">
+                <span className="stories-tag">Stories</span>
+                <span className="watch-all"><strong>Watch All</strong></span>
+               </div> 
+               <div className="container">
+               {Status.map((Stories) => {
                   return (
-                    <div key={Stories.id}>
-                      <div className="Stories-header">
+                      <div className="row stories"  key={Stories.id}>
                         <img src={Stories.dp} alt="dp"></img>
-                        <span>{Stories.username}</span>                   
+                        <span className="story-disc">
+                          <label><strong>{Stories.username}</strong></label>                   
+                          <label className="mins-ago">{Stories.minago}</label>                   
+                        </span>
                       </div>
-                    </div>
                     )
                 })} 
+               </div>              
             </div>
         )
     }
