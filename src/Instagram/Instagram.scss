@@ -33,3 +33,16 @@
     }
   }
 }
+
+
+@media only screen and (max-width: 320px) {
+  .second{
+    width: 100%;
+    top: 24%;
+    left: 0;
+    .profile{
+      display: none;
+    }
+  }
+  
+}

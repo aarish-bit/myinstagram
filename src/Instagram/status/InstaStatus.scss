@@ -1,19 +1,15 @@
 .instastatus{
     border: 1px solid #DBDBDB;
-    // position: fixed;
-    // top: 33%;
-    // left: 63%;  
-    // width: 19%;
     height: 225px;
-    overflow-y: scroll;
+    overflow-y: hidden;
     margin-top: 10px;
     .container{
-      margin-top: 48px;
       background-color: white;
+      overflow-y: scroll;
+      height: 80%;
     }
     .status-head{
       width: 303px;
-      position: fixed;
       top: 272px;
       background-color: white;
       height: 45px;
@@ -58,5 +54,48 @@
         font-size: 12px;
         color: #A8A5C3; 
       }
+  }
+}
+
+
+@media only screen and (max-width: 320px) {
+  .instastatus{
+    height: 100px;
+    overflow-x: hidden;
+    margin-top: 0px;
+    width: 700px;
+    .container{
+      display: flex;
+      overflow-x: scroll;
+      height: 100%;
+    }
+    .status-head{
+      display: none;
+    }
+    img{
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      margin-left: 15px;
+      margin-top: 10px;      
+    }
+    label{
+        margin-left: 4px;
+        margin-bottom: 0px;
+    }
+  }
+
+  .stories{
+    height: 100%;
+    padding-right: 25px;
+    width: 105px;
+    .story-disc{
+      display: flex;
+      flex-direction: column;
+      font-size: 10px;
+      .mins-ago{
+        display: none;
+      }
+    }
   }
 }

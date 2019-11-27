@@ -1,0 +1,29 @@
+.square{
+    background-color: aliceblue;
+    border: 1px solid grey;
+    padding: 0;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.square:focus {
+    outline: none;
+}
+
+.game {
+    position: fixed;
+    top: 30%;
+    left: 38%;
+    transform: translate(-50, -50%);
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+    .game-info{
+        margin-bottom: 25px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+}

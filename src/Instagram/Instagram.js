@@ -13,8 +13,8 @@ export class Instagram extends Component {
               <hr />
               <div className="container">
                 <div className="row instgram-content">
-                  <InstaPost  className="col-md-6 first"/>
-                  <div className="col-md-6 second">
+                  <InstaPost  className="first"/>
+                  <div className="second">
                     <div className="profile">
                       <img src="/post/aarish.jpg" alt="dp" className="profile-dp"></img>
                       <span className="profile-disc">

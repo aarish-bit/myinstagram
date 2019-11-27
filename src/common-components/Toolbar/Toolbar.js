@@ -20,8 +20,8 @@ function Toolbar() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/Admin">
-              <b>Admin</b>
+            <NavLink to="/Game">
+              <b>tic-tac-toe</b>
             </NavLink>
           </li>
         </ul>

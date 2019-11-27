@@ -14,9 +14,16 @@ function InstaToolbar() {
           <input type="text" placeholder="&#61442; Search" className="search"></input>
         </div>
         <div className="insta-icons">
-          <img src='./toolbar-icons/compass.png' className="user-logo" alt="logo" />
-          <img src='./toolbar-icons/heart.png' className="user-logo" alt="logo" />
-          <img src='./toolbar-icons/user.png' className="user-logo" alt="logo" />
+          <span><img src='./toolbar-icons/compass.png' className="user-logo" alt="logo" /></span>
+          <span className="dropdown">
+            <span type="button" className="btn dropdown-toggle" data-toggle="dropdown">
+              <img src='./toolbar-icons/heart.png' alt="logo" />
+            </span>
+            <div className="dropdown-menu">
+             hiii
+            </div>
+          </span> 
+          <span><img src='./toolbar-icons/user.png' className="user-logo" alt="logo" /></span>
         </div>
       </div>
     </div>
