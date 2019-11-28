@@ -1,0 +1,72 @@
+[
+    {
+        "id":6,
+        "dp": "./users/beck.jpeg",
+        "altText": "Slide 1",
+        "username": "David Beckham",
+        "minago": "24 MINS AGO" 
+      },
+      {
+        "id":7,
+        "dp": "./users/cris.jpeg",
+        "altText": "Slide 2",
+        "username": "Cristiano Ronaldo",
+        "minago": "11 HOURS AGO"
+      },
+      {
+        "id":8,
+        "dp": "./users/degea.jpeg",
+        "altText": "Slide 3",
+        "username": "David De Gea",
+        "minago": "30 MINS AGO" 
+      },
+      {
+        "id":9,
+        "dp": "./users/espn.jpeg",
+        "altText": "Slide 4",
+        "username": "ESPN India",
+        "minago": "13 HOURS AGO"
+      },
+      {
+        "id":10,
+        "dp": "./users/goal.jpeg",
+        "altText": "Slide 5",
+        "username": "GOAL Global",
+        "minago": "55 MINS AGO" 
+      },
+      {
+        "id":11,
+        "dp": "./users/beck.jpeg",
+        "altText": "Slide 1",
+        "username": "David Beckham",
+        "minago": "24 MINS AGO" 
+      },
+      {
+        "id":12,
+        "dp": "./users/cris.jpeg",
+        "altText": "Slide 2",
+        "username": "Cristiano Ronaldo",
+        "minago": "11 HOURS AGO"
+      },
+      {
+        "id":13,
+        "dp": "./users/degea.jpeg",
+        "altText": "Slide 3",
+        "username": "David De Gea",
+        "minago": "30 MINS AGO" 
+      },
+      {
+        "id":14,
+        "dp": "./users/espn.jpeg",
+        "altText": "Slide 4",
+        "username": "ESPN India",
+        "minago": "13 HOURS AGO"
+      },
+      {
+        "id":15,
+        "dp": "./users/goal.jpeg",
+        "altText": "Slide 5",
+        "username": "GOAL Global",
+        "minago": "55 MINS AGO" 
+      }
+]

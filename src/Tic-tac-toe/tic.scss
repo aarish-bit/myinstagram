@@ -1,5 +1,5 @@
 .square{
-    background-color: aliceblue;
+    background-color: #2b4e6c;
     border: 1px solid grey;
     padding: 0;
     width: 80px;
@@ -7,6 +7,9 @@
     text-align: center;
     font-size: 40px;
     font-weight: bold;
+    margin: 10px 10px;
+    color: white;
+    border-radius: 35%;
 }
 
 .square:focus {
@@ -17,10 +20,10 @@
     position: fixed;
     top: 30%;
     left: 38%;
-    transform: translate(-50, -50%);
+    // transform: translate(-50, -50%);
     display: flex;
-    flex-direction: column-reverse;
-    margin: 0;
+    flex-direction: column;
+    // margin: 0;
     .game-info{
         margin-bottom: 25px;
         font-size: 25px;

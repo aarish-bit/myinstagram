@@ -58,7 +58,7 @@
 }
 
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 414px) {
   .instastatus{
     height: 100px;
     overflow-x: hidden;
@@ -95,6 +95,200 @@
       font-size: 10px;
       .mins-ago{
         display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 667px) {
+  .instastatus{
+    height: 100px;
+    overflow-x: hidden;
+    margin-top: 0px;
+    width: 600px;
+    margin-left: 27px;
+    background-color: white;
+    .container{
+      display: flex;
+      overflow-x: scroll;
+      height: 100%;
+    }
+    .status-head{
+      display: none;
+    }
+    img{
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      margin-left: 15px;
+      margin-top: 10px;      
+    }
+    label{
+        margin-left: 4px;
+        margin-bottom: 0px;
+    }
+  }
+
+  .stories{
+    height: 100%;
+    padding-right: 25px;
+    width: 105px;
+    .story-disc{
+      display: flex;
+      flex-direction: column;
+      font-size: 10px;
+      .mins-ago{
+        display: none;
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: 740px) {
+  .instastatus{
+    margin-left: 63px;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .instastatus{
+    height: 100px;
+    overflow-x: hidden;
+    margin-top: 0px;
+    width: 600px;
+    margin-left: 50px;
+    background-color: white;
+    .container{
+      display: flex;
+      overflow-y: scroll;
+      height: 100%;
+    }
+    .status-head{
+      display: none;
+    }
+    img{
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      margin-left: 15px;
+      margin-top: 10px;      
+    }
+    label{
+        margin-left: 4px;
+        margin-bottom: 0px;
+    }
+  }
+
+  .stories{
+    height: 100%;
+    padding-right: 25px;
+    width: 105px;
+    .story-disc{
+      display: flex;
+      flex-direction: column;
+      font-size: 10px;
+      .mins-ago{
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .instastatus{
+    height: 265px;
+    overflow-x: hidden;
+    margin-top: 0px;
+    width: 273px;
+    margin-left: 65px;
+    background-color: white;
+    .container{
+      display: block;
+      flex-direction: column;
+      overflow-x: scroll;
+      height: 200px;
+    }
+    .status-head{
+      display: block;
+      width: 266px;
+    }
+    img{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-left: 15px;
+      margin-top: 10px;      
+    }
+    label{
+        margin-left: 4px;
+        margin-bottom: 0px;
+    }
+  }
+
+  .stories{
+    height: 50px;
+    // padding-right: 25px;
+    width: 255px;
+    display: flex;
+    .story-disc{
+      display: flex;
+      flex-direction: column;
+      font-size: 13px;
+      margin-top: 15px;
+      margin-left: 10px;
+      .mins-ago{
+        display: block;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .instastatus{
+    height: 265px;
+    overflow-x: hidden;
+    margin-top: 0px;
+    width: 273px;
+    margin-left: 65px;
+    background-color: white;
+    .container{
+      display: block;
+      flex-direction: column;
+      overflow-x: scroll;
+      height: 200px;
+    }
+    .status-head{
+      display: block;
+      width: 266px;
+    }
+    img{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-left: 15px;
+      margin-top: 10px;      
+    }
+    label{
+        margin-left: 4px;
+        margin-bottom: 0px;
+    }
+  }
+
+  .stories{
+    height: 50px;
+    // padding-right: 25px;
+    width: 255px;
+    display: flex;
+    .story-disc{
+      display: flex;
+      flex-direction: column;
+      font-size: 13px;
+      margin-top: 15px;
+      margin-left: 10px;
+      .mins-ago{
+        display: block;
       }
     }
   }

@@ -150,8 +150,137 @@
 }
 
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 414px) {
   .instapost{
     width: 100%;
+    margin-top: 60px;
+  }
+
+  .instapost-content{
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 0px;
+  }
+
+  .comment-box{
+    input[type=text]{
+      width: 275px;
+    }
+  }
+  
+  .modal{
+    margin-top: 50%;
+    width: 300px;
+    margin-left: 8%;
+  }
+}
+
+@media only screen and (min-width: 667px) {
+  .instapost{
+    width: 100%;
+    margin-top: 60px;
+    margin-left: -36px;
+  }
+
+  .instapost-content{
+    width: 600px;
+    margin-left: 0%;
+    margin-top: 10px;
+  }
+
+  .comment-box{
+    input[type=text]{
+      width: 275px;
+    }
+  }
+  
+  .modal{
+    margin-top: 0%;
+    width: 300px;
+    margin-left: 29%;
+  }
+}
+
+@media only screen and (min-width: 740px) {
+  .instapost{
+    width: 100%;
+    margin-top: 60px;
+    margin-left: -36px;
+  }
+
+  .instapost-content{
+    width: 600px;
+    margin-left: 0%;
+    margin-top: 10px;
+  }
+
+  .comment-box{
+    input[type=text]{
+      width: 275px;
+    }
+  }
+  
+  .modal{
+    margin-top: 0%;
+    width: 300px;
+    margin-left: 31%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .instapost{
+    width: 100%;
+    margin-top: 85px;
+    margin-left: 57px;
+  }
+
+  .instapost-content{
+    width: 600px;
+    margin-left: 0%;
+    margin-top: 10px;
+  }
+
+  .comment-box{
+    input[type=text]{
+      width: 275px;
+    }
+  }
+  
+  .modal{
+    margin-top: 13%;
+    width: 300px;
+    margin-left: 32%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .instapost{
+    width: 100%;
+    margin-top: 25px;
+    margin-left: 57px;
+  }
+
+  .instapost-content{
+    width: 600px;
+    margin-left: 0%;
+    margin-top: 10px;
+  }
+
+  .comment-box{
+    input[type=text]{
+      width: 475px;
+    }
+  }
+  
+  .modal{
+    margin-top: 8%;
+    width: 400px;
+    margin-left: 40%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .instapost{
+    margin-left: 115px;
   }
 }

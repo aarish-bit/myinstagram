@@ -1,93 +1,124 @@
 .InstaToolbar{
-    background-color: white;
-    height: 77px;
-    width: 100%;
-    position: fixed;
-    z-index: 10;
-    margin-top: 8px;
-    border-bottom: 1px solid #DBDBDB;
+  background-color: white;
+  height: 77px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  margin-top: 8px;
+  border-bottom: 1px solid #DBDBDB;
 }
 
 .InstaToolbar-content{
+  display: flex;
+  .insta-icons{
+    margin-left: 234px;
+    margin-top: 20px;
     display: flex;
-    .insta-icons{
-        margin-left: 234px;
-        margin-top: 20px;
-        display: flex;
-        .user-logo{
-          width: 25px;
-          height: 30px;
-          margin-left: 10px;
-          margin-top: 6px;
-        }
-        .dropdown{
-          .dropdown-toggle::after{
-            content: none;
-          }
-          img{
-            width: 25px;
-            height: 30px;
-            margin-left: 10px;
-          }  
-        }
+    .user-logo{
+      width: 25px;
+      height: 30px;
+      margin-left: 10px;
+      margin-top: 6px;
     }
+    .dropdown{
+      .dropdown-toggle::after{
+        content: none;
+      }
+      img{
+        width: 25px;
+        height: 30px;
+        margin-left: 10px;
+      } 
+      .dropdown-menu{
+        position: fixed;
+        width:300px;
+        margin-left: -225px;
+        height: 400px;
+        overflow-y: scroll;
+      } 
+      .notify{
+        height: 65px;
+        img{
+          margin-top: 10px;
+        }
+      }
+    }
+    .share-logo{
+      display: none;
+    }
+  }
 }
 
 
 
 .InstaToolbar-logo{
+  display: flex;
+  .insta-camera{
+    display: none;
+  }
+  .insta-logo{
+      display: block;
+      width: 35px;
+      margin-left: 268px;
+      margin-top: 23px;
+      height: 27px;
+  }
+  .line-between{
+      background-color: black;
+      height: 29px;
+      width: 1px;
+      margin-left: 14px;
+      margin-top: 22px;
+  }
+  .insta-head{
+      width: 105px;
+      height: 37px;
+      margin-top: 20px;
+      margin-left: 15px;
+  }
+}
+
+.search{
+  margin-left: 215px;
+  margin-top: 20px;
+  height: 33px;
+  opacity: 0.7;
+  
+}
+
+// .search::input-placeholder { 
+//   font-family: FontAwesome;
+//   font-weight: normal;
+//   overflow: visible;
+//   vertical-align: top;
+//   display: inline-block !important;
+//   padding-left: 25px;
+//   padding-top: 2px;
+//   color: hsl(9, 40%, 60%);
+// }
+
+
+@media only screen and (max-width: 414px) {
+  .InstaToolbar-logo{
     display: flex;
-    .insta-logo{
+    .insta-camera{
+        width: 30px;
+        height: 30px;
+        margin-top: 22px;
+        margin-left: 5px;
         display: block;
-        width: 35px;
-        margin-left: 268px;
-        margin-top: 23px;
-        height: 27px;
+    }
+    .insta-logo{
+        display: none;
     }
     .line-between{
-       background-color: black;
-        height: 29px;
-        width: 1px;
-       margin-left: 14px;
-       margin-top: 22px;
-    }
+     display: none;
+     }
     .insta-head{
         width: 105px;
         height: 37px;
         margin-top: 20px;
-        margin-left: 15px;
-    }
-}
-
-.search{
-    margin-left: 215px;
-    margin-top: 20px;
-    height: 33px;
-    opacity: 0.7;
-    
-}
-
-.search::input-placeholder { 
-    font-family: FontAwesome;
-    font-weight: normal;
-    overflow: visible;
-    vertical-align: top;
-    display: inline-block !important;
-    padding-left: 25px;
-    padding-top: 2px;
-    color: hsl(9, 40%, 60%);
-}
-
-
-@media only screen and (max-width: 320px) {
-  .InstaToolbar-logo{
-    display: flex;
-    .insta-logo{
-        display: block;
-        width: 35px;
-        margin-left: 7px;
-        margin-top: 23px;
-        height: 27px;
+        margin-left: 88px;
     }
   }
   
@@ -98,22 +129,216 @@
   .InstaToolbar-content{
     display: flex;
     .insta-icons{
-        margin-left: 0px;
-        margin-top: 15px;
-        display: flex;
-        .user-logo{
-          width: 21px;
-          height: 25px;
-          margin-left: 10px;
-          margin-top: 6px;
-        }
-        .dropdown{
-          img{
-            width: 21px;
-            height: 25px;
-            margin-left: 10px;
-          }  
-        }
+      margin-left: 0px;
+      margin-top: 15px;
+      display: flex;
+      .user-logo{
+        display: none;
+      }
+      .dropdown{
+        display: none; 
+      }
+      .share-logo{
+        height: 27px;
+        width: 30px;
+        margin-left: 90px;
+        margin-top: 10px;
+        display: block;
+      }
     }
+  }
 }
+
+@media only screen and (min-width: 667px) {
+  .InstaToolbar-logo{
+    display: flex;
+    .insta-camera{
+        width: 30px;
+        height: 30px;
+        margin-top: 22px;
+        margin-left: 15px;
+        display: block;
+    }
+    .insta-logo{
+        display: none;
+    }
+    .line-between{
+     display: none;
+     }
+    .insta-head{
+        width: 105px;
+        height: 37px;
+        margin-top: 20px;
+        margin-left: 275px;
+    }
+  }
+  
+  .search{
+    display: none;
+  }
+  
+  .InstaToolbar-content{
+    display: flex;
+    .insta-icons{
+      margin-left: 0px;
+      margin-top: 15px;
+      display: flex;
+      .user-logo{
+        display: none;
+      }
+      .dropdown{
+        display: none; 
+      }
+      .share-logo{
+        height: 27px;
+        width: 30px;
+        margin-left: 200px;
+        margin-top: 10px;
+        display: block;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 740px) {
+  .InstaToolbar-logo{
+    display: flex;
+    .insta-head{
+        width: 105px;
+        height: 37px;
+        margin-top: 20px;
+        margin-left: 262px;
+    }
+  }
+  
+  .InstaToolbar-content{
+      .share-logo{
+        height: 27px;
+        width: 30px;
+        margin-left: 200px;
+        margin-top: 10px;
+        display: block;
+      }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .InstaToolbar-logo{
+    display: flex;
+    .insta-camera{
+        width: 30px;
+        height: 30px;
+        margin-top: 22px;
+        margin-left: 15px;
+        display: block;
+    }
+    .insta-logo{
+        display: none;
+    }
+    .line-between{
+     display: none;
+     }
+    .insta-head{
+        width: 105px;
+        height: 37px;
+        margin-top: 20px;
+        margin-left: 275px;
+    }
+  }
+  
+  .search{
+    display: none;
+  }
+  
+  .InstaToolbar-content{
+    display: flex;
+    .insta-icons{
+      margin-left: 0px;
+      margin-top: 15px;
+      display: flex;
+      .user-logo{
+        display: none;
+      }
+      .dropdown{
+        display: none; 
+      }
+      .share-logo{
+        height: 27px;
+        width: 30px;
+        margin-left: 270px;
+        margin-top: 10px;
+        display: block;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .InstaToolbar-logo{
+    display: flex;
+    .insta-camera{
+        display: none;
+    }
+    .insta-logo{
+        margin-left: 45px;
+        display: block;
+    }
+    .line-between{
+     display: block;
+     }
+    .insta-head{
+        width: 105px;
+        height: 37px;
+        margin-top: 20px;
+        margin-left: 22px;
+    }
+  }
+  
+  .search{
+    display: block;
+  }
+  
+  .InstaToolbar-content{
+    display: flex;
+    .insta-icons{
+      margin-left: 200px;
+      margin-top: 15px;
+      display: flex;
+      .user-logo{
+        display: block;
+      }
+      .dropdown{
+        display: block; 
+      }
+      .share-logo{
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px){
+  .InstaToolbar-logo{
+    display: flex;
+    .insta-logo{
+        margin-left: 145px;
+        display: block;
+    }
+  }  
+}
+
+@media only screen and (min-width: 1350px){
+  .InstaToolbar-logo{
+    display: flex;
+    .insta-logo{
+        margin-left: 265px;
+        display: block;
+    }
+  }
+
+  .InstaToolbar-content{
+    .insta-icons{
+      margin-left: 260px;
+    }
+  }  
 }

@@ -12,12 +12,6 @@ export default class Game extends Component {
             ]
         }
     }
-    jumpTo(step){
-        this.setState({
-            stepNumber: step,
-            xIsNext: (step%2)===0
-        })
-    }
 
     handleClick(i) {
         const history = this.state.history.slice(0, this.state.stepNumber + 1);
@@ -29,9 +23,7 @@ export default class Game extends Component {
         }
         squares[i] = this.state.xIsNext ? 'X' : 'O';
         this.setState({
-            history: history.concat({
-                squares: squares
-            }),
+            history: history.concat({squares: squares}),
             xIsNext: !this.state.xIsNext,
             stepNumber: history.length
         });
@@ -42,23 +34,13 @@ export default class Game extends Component {
         const history = this.state.history;
         const current = history[this.state.stepNumber];
         const winner = calculateWinner(current.squares);
-        const moves = history.map((step, move) => {
-            const desc = move ? 'Go to #' + move : 'Start the Game';
-            return (
-                <li key={move}>
-                    <button onClick={() => { this.jumpTo(move) }}>
-                        {desc}
-                    </button>
-                </li>
-            )
-        });
+
         let status;
         if (winner) {
             status = 'Winner is ' + winner;
         } else {
             status = 'Next Player is ' + (this.state.xIsNext ? 'X' : 'O');
         }
-
 
         return (
             <div className="game">
@@ -68,7 +50,6 @@ export default class Game extends Component {
                 </div>
                 <div className="game-info">
                     <div>{status}</div>
-                    <ul>{moves}</ul>
                 </div>
 
             </div>
