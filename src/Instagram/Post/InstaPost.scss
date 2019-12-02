@@ -1,13 +1,12 @@
 .instapost{
-  padding-top: 100px;
-  width: 65%
+  width: 53%
 }
 
 .instapost-content{
   border: 1px solid #DBDBDB;
   width: 85%;
   height: 795px;
-  margin-top: 40px;
+  margin-top: 55px;
   margin-left: 105px; 
   display: flex;
   flex-direction: column;
@@ -152,7 +151,6 @@
 
 @media only screen and (max-width: 414px) {
   .instapost{
-    width: 100%;
     margin-top: 60px;
   }
 
@@ -177,7 +175,6 @@
 
 @media only screen and (min-width: 667px) {
   .instapost{
-    width: 100%;
     margin-top: 60px;
     margin-left: -36px;
   }
@@ -203,7 +200,6 @@
 
 @media only screen and (min-width: 740px) {
   .instapost{
-    width: 100%;
     margin-top: 60px;
     margin-left: -36px;
   }
@@ -229,7 +225,6 @@
 
 @media only screen and (min-width: 768px) {
   .instapost{
-    width: 100%;
     margin-top: 85px;
     margin-left: 57px;
   }
@@ -255,8 +250,7 @@
 
 @media only screen and (min-width: 1024px) {
   .instapost{
-    width: 100%;
-    margin-top: 25px;
+    margin-top: 55px;
     margin-left: 57px;
   }
 

@@ -11,7 +11,7 @@ export class Instagram extends Component {
             <div className="instagram">
               <InstaToolbar />
               <hr />
-              <div className="container">
+              <div className="container insta-container">
                 <div className="row instgram-content">
                   <InstaPost  className="first"/>
                   <div className="second">
