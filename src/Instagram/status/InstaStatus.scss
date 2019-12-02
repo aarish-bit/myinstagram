@@ -62,7 +62,7 @@
   .instastatus{
     height: 100px;
     overflow-x: hidden;
-    margin-top: 0px;
+    margin-top: 145px;
     width: 700px;
     .container{
       display: flex;
@@ -104,7 +104,7 @@
   .instastatus{
     height: 100px;
     overflow-x: hidden;
-    margin-top: 0px;
+    margin-top: 145px;
     width: 600px;
     margin-left: 27px;
     background-color: white;
@@ -156,10 +156,11 @@
   .instastatus{
     height: 100px;
     overflow-x: hidden;
-    margin-top: 0px;
+    margin-top: 145px;
     width: 600px;
     margin-left: 50px;
     background-color: white;
+    position: fixed;
     .container{
       display: flex;
       overflow-y: scroll;
@@ -200,10 +201,12 @@
   .instastatus{
     height: 265px;
     overflow-x: hidden;
-    margin-top: 0px;
+    margin-top: 145px;
     width: 273px;
-    margin-left: 65px;
+    margin-left: 25px;
     background-color: white;
+    position: fixed;
+
     .container{
       display: block;
       flex-direction: column;
@@ -249,10 +252,12 @@
   .instastatus{
     height: 265px;
     overflow-x: hidden;
-    margin-top: 0px;
+    margin-top: 145px;
     width: 273px;
-    margin-left: 65px;
+    margin-left: 25px;
     background-color: white;
+    position: fixed;
+
     .container{
       display: block;
       flex-direction: column;

@@ -90,9 +90,11 @@
 
 @media only screen and (min-width: 1024px) {
   .suggestion{
-    display: block;
-    margin-left: 65px;
+    margin-left: 25px;
     width: 273px;
+    margin-top: 420px;
+    position: fixed;
+    display: block;
     .suggest-head{
       width: 266px;
     }
