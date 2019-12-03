@@ -1,20 +1,25 @@
 .toolbar{
   position: fixed;
   z-index:10;
+  
 }
 
 .toolbar-content{
   display: block;
   position: fixed;
-  background-color: white;
+  background-color: black;
   width: 100%;
   top: 0;
   border-bottom: 1px solid black;
+  a{
+    color: aliceblue;
+  }
   ul{ 
     display: flex;
     li{
       flex:1;  
       list-style: none;
+      margin-top: 8px;
     }   
   } 
 }

@@ -4,6 +4,7 @@ import InstaToolbar from './toolbar/InstaToolbar'
 import InstaPost from './Post/InstaPost';
 import InstaStatus from './status/InstaStatus';
 import Suggestion from './Suggestions/Suggestion';
+import Profile from './Profile';
 
 export class Instagram extends Component {
     render() {
@@ -15,13 +16,7 @@ export class Instagram extends Component {
                 <div className="row instgram-content">
                   <InstaPost  className="first"/>
                   <div className="second">
-                    <div className="profile">
-                      <img src="/post/aarish.jpg" alt="dp" className="profile-dp"></img>
-                      <span className="profile-disc">
-                      <label><strong>nightmare_king</strong></label>                   
-                      <label className="user">Aarish Hussain</label>                   
-                      </span>
-                    </div>
+                    <Profile />
                     <InstaStatus />
                     <Suggestion />                           
                   </div>

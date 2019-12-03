@@ -4,7 +4,6 @@ import { Route, Switch } from 'react-router-dom'
 // import Home from './../home/Homepage/Home'
 import Instagram from '../Instagram/Instagram';
 import Game from '../Tic-tac-toe/Game';
-import Matrix from '../Matrix/Matrix';
 
 
 const Routes = () => {
@@ -12,9 +11,8 @@ const Routes = () => {
     <div>
       <main>
         <Switch>
-          <Route exact path="/Game" component={Game} />
           <Route exact path="/Instagram" component={Instagram} />
-          <Route exact path="/Matrix" component={Matrix} />
+          <Route exact path="/Game" component={Game} />
         </Switch>
       </main>
     </div>

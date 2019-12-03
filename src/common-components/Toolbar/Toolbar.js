@@ -24,11 +24,6 @@ function Toolbar() {
               <b>tic-tac-toe</b>
             </NavLink>
           </li>
-          <li>
-            <NavLink to="/Matrix">
-              <b>Matrix</b>
-            </NavLink>
-          </li>
         </ul>
       </header>
     </div>

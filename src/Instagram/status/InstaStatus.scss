@@ -62,8 +62,8 @@
   .instastatus{
     height: 100px;
     overflow-x: hidden;
-    margin-top: 145px;
     width: 700px;
+    margin-top: 0px;
     .container{
       display: flex;
       overflow-x: scroll;
@@ -87,7 +87,6 @@
 
   .stories{
     height: 100%;
-    padding-right: 25px;
     width: 105px;
     .story-disc{
       display: flex;
@@ -98,15 +97,14 @@
       }
     }
   }
-}
+} 
 
 @media only screen and (min-width: 667px) {
   .instastatus{
     height: 100px;
     overflow-x: hidden;
-    margin-top: 145px;
-    width: 600px;
-    margin-left: 27px;
+    // width: 600px;
+    // margin-left: 27px;
     background-color: white;
     .container{
       display: flex;
@@ -131,7 +129,6 @@
 
   .stories{
     height: 100%;
-    padding-right: 25px;
     width: 105px;
     .story-disc{
       display: flex;
@@ -147,7 +144,9 @@
 
 @media only screen and (min-width: 740px) {
   .instastatus{
-    margin-left: 63px;
+    // margin-left: 63px;
+    margin-top: 0px;
+    width: 100%;
   }
 }
 
@@ -156,9 +155,7 @@
   .instastatus{
     height: 100px;
     overflow-x: hidden;
-    margin-top: 145px;
-    width: 600px;
-    margin-left: 50px;
+    width: 94%;
     background-color: white;
     position: fixed;
     .container{
@@ -184,7 +181,6 @@
 
   .stories{
     height: 100%;
-    padding-right: 25px;
     width: 105px;
     .story-disc{
       display: flex;
@@ -197,15 +193,20 @@
   }
 }
 
+@media only screen and (min-width: 800px){
+ .instastatus{
+   width: 89%;
+ }
+}
+
 @media only screen and (min-width: 1024px) {
   .instastatus{
     height: 265px;
     overflow-x: hidden;
-    margin-top: 145px;
     width: 273px;
     margin-left: 25px;
     background-color: white;
-    position: fixed;
+    position: relative;
 
     .container{
       display: block;
@@ -231,8 +232,7 @@
   }
 
   .stories{
-    height: 50px;
-    // padding-right: 25px;
+    height: 55px;    
     width: 255px;
     display: flex;
     .story-disc{
@@ -252,16 +252,15 @@
   .instastatus{
     height: 265px;
     overflow-x: hidden;
-    margin-top: 145px;
     width: 273px;
     margin-left: 25px;
     background-color: white;
-    position: fixed;
+    position: relative;
 
     .container{
       display: block;
       flex-direction: column;
-      overflow-x: scroll;
+      overflow-x: hidden;;
       height: 200px;
     }
     .status-head{
@@ -283,7 +282,7 @@
 
   .stories{
     height: 50px;
-    // padding-right: 25px;
+    
     width: 255px;
     display: flex;
     .story-disc{

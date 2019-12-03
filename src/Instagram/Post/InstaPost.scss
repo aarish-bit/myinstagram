@@ -1,13 +1,13 @@
 .instapost{
-  width: 53%
+  width: 65%
 }
 
 .instapost-content{
   border: 1px solid #DBDBDB;
   width: 85%;
   height: 795px;
-  margin-top: 55px;
-  margin-left: 105px; 
+  margin-left: 15%;
+  margin-top: 10%;
   display: flex;
   flex-direction: column;
   .post-header{
@@ -151,7 +151,9 @@
 
 @media only screen and (max-width: 414px) {
   .instapost{
-    margin-top: 60px;
+    width: 100%;
+    margin-top: 100px;
+    height: 100%;
   }
 
   .instapost-content{
@@ -175,12 +177,12 @@
 
 @media only screen and (min-width: 667px) {
   .instapost{
-    margin-top: 60px;
-    margin-left: -36px;
+    margin-top: 100px;
+    width: 100%;
   }
 
   .instapost-content{
-    width: 600px;
+    width: 100%;
     margin-left: 0%;
     margin-top: 10px;
   }
@@ -200,12 +202,10 @@
 
 @media only screen and (min-width: 740px) {
   .instapost{
-    margin-top: 60px;
-    margin-left: -36px;
+    margin-top: 95px;
   }
 
   .instapost-content{
-    width: 600px;
     margin-left: 0%;
     margin-top: 10px;
   }
@@ -225,14 +225,7 @@
 
 @media only screen and (min-width: 768px) {
   .instapost{
-    margin-top: 85px;
-    margin-left: 57px;
-  }
-
-  .instapost-content{
-    width: 600px;
-    margin-left: 0%;
-    margin-top: 10px;
+    width: 100%; 
   }
 
   .comment-box{
@@ -250,14 +243,14 @@
 
 @media only screen and (min-width: 1024px) {
   .instapost{
-    margin-top: 55px;
-    margin-left: 57px;
-  }
+    width: 67%;
+    margin-top: 0%;
+   }
 
   .instapost-content{
     width: 600px;
-    margin-left: 0%;
-    margin-top: 10px;
+    margin-left: 5%;
+    margin-top: 55px;
   }
 
   .comment-box{
@@ -275,6 +268,10 @@
 
 @media only screen and (min-width: 1280px) {
   .instapost{
-    margin-left: 115px;
-  }
+    width: 63%;
+   }
+
+  .instapost-content{
+    margin-left: 15%;
+  } 
 }
