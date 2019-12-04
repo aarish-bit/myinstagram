@@ -76,7 +76,7 @@
       width: 55px;
       height: 55px;
       border-radius: 50%;
-      margin-left: 15px;
+      margin-left: 5px;
       margin-top: 10px;      
     }
     label{
@@ -92,6 +92,7 @@
       display: flex;
       flex-direction: column;
       font-size: 10px;
+      width: 65px;
       .mins-ago{
         display: none;
       }
@@ -124,12 +125,14 @@
     label{
         margin-left: 4px;
         margin-bottom: 0px;
+        width: 80px;
     }
   }
 
   .stories{
     height: 100%;
-    width: 105px;
+    width: 90px;
+    margin-left: 5px;
     .story-disc{
       display: flex;
       flex-direction: column;
@@ -211,7 +214,7 @@
     .container{
       display: block;
       flex-direction: column;
-      overflow-x: scroll;
+      overflow-x: hidden;
       height: 200px;
     }
     .status-head{
@@ -228,6 +231,7 @@
     label{
         margin-left: 4px;
         margin-bottom: 0px;
+        width: 112px;
     }
   }
 
@@ -277,6 +281,7 @@
     label{
         margin-left: 4px;
         margin-bottom: 0px;
+        width: 112px;
     }
   }
 

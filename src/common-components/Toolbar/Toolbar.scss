@@ -1,7 +1,6 @@
 .toolbar{
   position: fixed;
   z-index:10;
-  
 }
 
 .toolbar-content{
@@ -11,6 +10,7 @@
   width: 100%;
   top: 0;
   border-bottom: 1px solid black;
+  height: 41px;
   a{
     color: aliceblue;
   }

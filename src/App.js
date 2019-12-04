@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Toolbar from './common-components/Toolbar/Toolbar';
-import Routes from './Routes/Routes';
+import Instagram from './Instagram/Instagram';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <div className="App">
         <Toolbar />
         <hr />
-        <Routes />
+        <Instagram />
       </div>
     </Router>
   );

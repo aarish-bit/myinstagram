@@ -173,7 +173,15 @@
 
 @media only screen and (min-width: 1280px) {
   .second{
-    left: 61%;
+    left: 788px;
+    position: fixed;
+  }
+  
+}
+
+@media only screen and (min-width: 1380px) {
+  .second{
+    left: 918px;
     position: fixed;
   }
   
