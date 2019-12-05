@@ -14,12 +14,12 @@ export class InstaStatus extends Component {
                {Status.map((Stories) => {
                   return (
                       <div className="row stories"  key={Stories.id}>
-                        <img src={Stories.dp} alt="dp"></img>
-                        <span className="story-disc">
+                          <img src={Stories.dp} alt="dp"></img>
+                          <span className="story-disc">
                           <label><strong>{Stories.username}</strong></label>                   
                           <label className="mins-ago">{Stories.minago}</label>                   
                         </span>
-                      </div>
+                        </div>
                     )
                 })} 
                </div>              

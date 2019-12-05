@@ -158,6 +158,7 @@
 
   .instapost-content{
     width: 100%;
+    height: 615px;
     margin-left: 0%;
     margin-top: 0px;
     .post-content{
@@ -169,7 +170,7 @@
 
   .comment-box{
     input[type=text]{
-      width: 275px;
+      width: 274px;
     }
   }
   
@@ -180,7 +181,7 @@
   }
 }
 
-@media only screen and (min-width: 667px) {
+@media only screen and (min-width: 640px) {
   .instapost{
     margin-top: 100px;
     width: 100%;

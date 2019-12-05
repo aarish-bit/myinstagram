@@ -23,7 +23,7 @@
                             background: #1D5686;
                            }
             
-            .container .box{float: left;
+            .container input[type=button]{float: left;
                             width: 100px;
                             height: 100px;
                             border: 1px solid #000;
@@ -54,107 +54,135 @@
         <div class="container" id="main">
             <span id="turn">Play</span>
             <!-- show X or O on div click -->
-            <div class="box" id="box1"></div>
-            <div class="box" id="box2"></div>
-            <div class="box" id="box3"></div>
-            <div class="box" id="box4"></div>
-            <div class="box" id="box5"></div>
-            <div class="box" id="box6"></div>
-            <div class="box" id="box7"></div>
-            <div class="box" id="box8"></div>
-            <div class="box" id="box9"></div>
+            <input type="button" class="btn" id="btn1" onclick="clickBtn('btn1')">
+            <input type="button" class="btn" id="btn2" onclick="clickBtn('btn2')">
+            <input type="button" class="btn" id="btn3" onclick="clickBtn('btn3')">
+            <input type="button" class="btn" id="btn4" onclick="clickBtn('btn4')">
+            <input type="button" class="btn" id="btn5" onclick="clickBtn('btn5')">
+            <input type="button" class="btn" id="btn6" onclick="clickBtn('btn6')">
+            <input type="button" class="btn" id="btn7" onclick="clickBtn('btn7')">
+            <input type="button" class="btn" id="btn8" onclick="clickBtn('btn8')">
+            <input type="button" class="btn" id="btn9" onclick="clickBtn('btn9')">
         </div>
         <button onclick="replay()">Play Again</button>
         
         <script>
             
-            var turn = document.getElementById("turn"),
-                boxes = document.querySelectorAll("#main div"), X_or_O = 0;
+            var turn = document.getElementById("turn")
+            var game=1;
+            var removeWin = [];
+            var boxes = document.querySelectorAll("#main input");
+
+            function clickBtn(btn){
+            	// enableBoxes()
+            	if(game==1) {
+            		document.getElementById(btn).value="X";
+            		game -=1;
+            		document.getElementById(btn).disabled="disabled";
+                    turn.innerHTML = "O Turn Now";
+            		getWinner();
+            	}else{
+            		document.getElementById(btn).value="O";
+            		game +=1;
+            		document.getElementById(btn).disabled="disabled";
+                    turn.innerHTML ="X Turn Now";
+            		getWinner();	
+            	}
+            }    
             
-            function selectWinnerBoxes(b1,b2,b3){
+            function selectWinnerBtnes(b1,b2,b3){
+            	
                 b1.classList.add("win");
                 b2.classList.add("win");
                 b3.classList.add("win");
-                turn.innerHTML = b1.innerHTML + " Won Congrat";
+                turn.innerHTML = b1.value + " Won Congrat";
                 turn.style.fontSize = "30px";
+                removeWin.push(b1)
+                removeWin.push(b2)
+                removeWin.push(b3)
+
+                disableBoxes()
             }
             
             function getWinner(){
                 
-                var box1 = document.getElementById("box1"),
-                    box2 = document.getElementById("box2"),
-                    box3 = document.getElementById("box3"),
-                    box4 = document.getElementById("box4"),
-                    box5 = document.getElementById("box5"),
-                    box6 = document.getElementById("box6"),
-                    box7 = document.getElementById("box7"),
-                    box8 = document.getElementById("box8"),
-                    box9 = document.getElementById("box9");
+                var btn1 = document.getElementById("btn1"),
+                    btn2 = document.getElementById("btn2"),
+                    btn3 = document.getElementById("btn3"),
+                    btn4 = document.getElementById("btn4"),
+                    btn5 = document.getElementById("btn5"),
+                    btn6 = document.getElementById("btn6"),
+                    btn7 = document.getElementById("btn7"),
+                    btn8 = document.getElementById("btn8"),
+                    btn9 = document.getElementById("btn9");
             
             // get all posibilites
-              if(box1.innerHTML !== "" && box1.innerHTML === box2.innerHTML && box1.innerHTML === box3.innerHTML)
-                 selectWinnerBoxes(box1,box2,box3);
+              if(btn1.value !== "" && btn1.value === btn2.value && btn1.value === btn3.value){
+              	selectWinnerBtnes(btn1,btn2,btn3);
+              }
          
-              if(box4.innerHTML !== "" && box4.innerHTML === box5.innerHTML && box4.innerHTML === box6.innerHTML)
-                 selectWinnerBoxes(box4,box5,box6);
+              if(btn4.value !== "" && btn4.value === btn5.value && btn4.value === btn6.value){
+				selectWinnerBtnes(btn4,btn5,btn6);              }
              
-              if(box7.innerHTML !== "" && box7.innerHTML === box8.innerHTML && box7.innerHTML === box9.innerHTML)
-                 selectWinnerBoxes(box7,box8,box9);
+              if(btn7.value !== "" && btn7.value === btn8.value && btn7.value === btn9.value){
+				selectWinnerBtnes(btn7,btn8,btn9);              }
              
-              if(box1.innerHTML !== "" && box1.innerHTML === box4.innerHTML && box1.innerHTML === box7.innerHTML)
-                 selectWinnerBoxes(box1,box4,box7);
+              if(btn1.value !== "" && btn1.value === btn4.value && btn1.value === btn7.value){
+				selectWinnerBtnes(btn1,btn4,btn7);              }
              
-              if(box2.innerHTML !== "" && box2.innerHTML === box5.innerHTML && box2.innerHTML === box8.innerHTML)
-                 selectWinnerBoxes(box2,box5,box8);
+              if(btn2.value !== "" && btn2.value === btn5.value && btn2.value === btn8.value){
+				selectWinnerBtnes(btn2,btn5,btn8);              }
              
-              if(box3.innerHTML !== "" && box3.innerHTML === box6.innerHTML && box3.innerHTML === box9.innerHTML)
-                 selectWinnerBoxes(box3,box6,box9);
+              if(btn3.value !== "" && btn3.value === btn6.value && btn3.value === btn9.value){
+				selectWinnerBtnes(btn3,btn6,btn9);              }
              
-              if(box1.innerHTML !== "" && box1.innerHTML === box5.innerHTML && box1.innerHTML === box9.innerHTML)
-                 selectWinnerBoxes(box1,box5,box9);
+              if(btn1.value !== "" && btn1.value === btn5.value && btn1.value === btn9.value){
+				selectWinnerBtnes(btn1,btn6,btn9);              }
              
-              if(box3.innerHTML !== "" && box3.innerHTML === box5.innerHTML && box3.innerHTML === box7.innerHTML)
-                 selectWinnerBoxes(box3,box5,box7);
+              if(btn3.value !== "" && btn3.value === btn5.value && btn3.value === btn7.value){
+				selectWinnerBtnes(btn3,btn5,btn7);              }
              
             }
-            
-            
-            // set event onclick
-            for(var i = 0; i < boxes.length; i++){
-                boxes[i].onclick = function(){
-                    // not allow to change the value of the box
-                    if(this.innerHTML !== "X" && this.innerHTML !== "O"){
-	                    if(X_or_O%2 === 0){
-	                       console.log(X_or_O);
-	                       this.innerHTML = "X"; 
-	                       turn.innerHTML = "O Turn Now";
-	                       getWinner();
-	                       X_or_O += 1;
-	                       
-	                    }else{
-	                        console.log(X_or_O);
-	                       this.innerHTML = "O";
-	                       turn.innerHTML = "X Turn Now";
-	                       getWinner();
-	                       X_or_O += 1;
-	                    }
-                	}
-                }
+
+          
+
+
+
+            function disableBoxes(){
+            	boxes.forEach(b=>b.disabled = true)
             }
 
             
-            
-            function replay(){
+            function replay(b1,b2,b3){
                 
-                for(var i = 0; i < boxes.length; i++){
-                    boxes[i].classList.remove("win");
-                    boxes[i].innerHTML = "";
-                    turn.innerHTML = "Play";
-                    turn.style.fontSize = "25px";
-                    
+                var btn1 = document.getElementById("btn1").value='',
+                    btn2 = document.getElementById("btn2").value='',
+                    btn3 = document.getElementById("btn3").value='',
+                    btn4 = document.getElementById("btn4").value='',
+                    btn5 = document.getElementById("btn5").value='',
+                    btn6 = document.getElementById("btn6").value='',
+                    btn7 = document.getElementById("btn7").value='',
+                    btn8 = document.getElementById("btn8").value='',
+                    btn9 = document.getElementById("btn9").value='';
+
+                 var btn1 = document.getElementById("btn1").disabled='',
+                    btn2 = document.getElementById("btn2").disabled='',
+                    btn3 = document.getElementById("btn3").disabled='',
+                    btn4 = document.getElementById("btn4").disabled='',
+                    btn5 = document.getElementById("btn5").disabled='',
+                    btn6 = document.getElementById("btn6").disabled='',
+                    btn7 = document.getElementById("btn7").disabled='',
+                    btn8 = document.getElementById("btn8").disabled='',
+                    btn9 = document.getElementById("btn9").disabled='';  
+
+
+               	   removeWin.forEach(b=>b.classList.remove("win"))  
+				   removeWin = []
+                   turn.innerHTML = "Play";
+                   turn.style.fontSize = "25px"; 
                 }
                 
-            }
+            
             
         </script>
         

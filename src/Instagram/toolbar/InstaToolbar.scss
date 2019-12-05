@@ -99,15 +99,18 @@
 
 
 @media only screen and (max-width: 414px) {
+  .insta-camera{
+    width: 30px;
+    height: 30px;
+    margin-top: 22px;
+    margin-left: 5px;
+    display: block;
+  }
+
   .InstaToolbar-logo{
     display: flex;
-    .insta-camera{
-        width: 30px;
-        height: 30px;
-        margin-top: 22px;
-        margin-left: 5px;
-        display: block;
-    }
+    margin-left: 77px;
+
     .insta-logo{
         display: none;
     }
@@ -118,7 +121,6 @@
         width: 105px;
         height: 37px;
         margin-top: 20px;
-        margin-left: 88px;
     }
   }
   
@@ -141,7 +143,7 @@
       .share-logo{
         height: 27px;
         width: 30px;
-        margin-left: 90px;
+        margin-left: 95px;
         margin-top: 10px;
         display: block;
       }
@@ -149,16 +151,18 @@
   }
 }
 
-@media only screen and (min-width: 667px) {
+@media only screen and (min-width: 640px) {
+  .insta-camera{
+    width: 30px;
+    height: 30px;
+    margin-top: 22px;
+    margin-left: 15px;
+    display: block;
+  }
+
   .InstaToolbar-logo{
     display: flex;
-    .insta-camera{
-        width: 30px;
-        height: 30px;
-        margin-top: 22px;
-        margin-left: 15px;
-        display: block;
-    }
+    margin-left: 205px;
     .insta-logo{
         display: none;
     }
@@ -169,7 +173,6 @@
         width: 105px;
         height: 37px;
         margin-top: 20px;
-        margin-left: 275px;
     }
   }
   
@@ -196,6 +199,17 @@
         margin-top: 10px;
         display: block;
       }
+    }
+  }
+}
+
+@media only screen and (min-width: 736px) {
+  .InstaToolbar-logo{
+    margin-left: 255px;
+  }
+  .InstaToolbar-content{
+    .share-logo{
+      margin-left: 250px;
     }
   }
 }
@@ -223,15 +237,17 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .insta-camera{
+    width: 30px;
+    height: 30px;
+    margin-top: 22px;
+    margin-left: 15px;
+    display: block;
+  }
   .InstaToolbar-logo{
     display: flex;
-    .insta-camera{
-        width: 30px;
-        height: 30px;
-        margin-top: 22px;
-        margin-left: 15px;
-        display: block;
-    }
+    margin-left: 0px; 
+    
     .insta-logo{
         display: none;
     }
@@ -274,11 +290,12 @@
 }
 
 @media only screen and (min-width: 1024px) {
+  .insta-camera{
+    display: none;
+  }
   .InstaToolbar-logo{
-    display: flex;
-    .insta-camera{
-        display: none;
-    }
+    display: flex; 
+    margin-left: 0px; 
     .insta-logo{
         margin-left: 45px;
         display: block;
