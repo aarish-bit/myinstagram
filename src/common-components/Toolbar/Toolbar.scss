@@ -1,6 +1,7 @@
 .toolbar{
   position: fixed;
   z-index:10;
+  text-align: center;
 }
 
 .toolbar-content{
@@ -24,6 +25,3 @@
   } 
 }
 
-@media only screen and (max-width: 600px) {
-  
-}

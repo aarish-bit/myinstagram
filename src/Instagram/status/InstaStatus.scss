@@ -57,17 +57,33 @@
   }
 }
 
+@media only screen and (max-width: 360px) {
+  .instastatus{  
+    height: 115px;
+    border-bottom: 1px solid #DBDBDB;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .instastatus{  
+    height: 135px;
+    .container{
+      margin-top: 20px;
+    }
+  }
+}
 
 @media only screen and (max-width: 414px) {
   .instastatus{
-    height: 100px;
-    overflow-x: hidden;
+    height: 120px;
     width: 700px;
     margin-top: 0px;
     .container{
       display: flex;
       overflow-x: scroll;
       height: 100%;
+      width: 790px;
+      text-align: center;
       // justify-content: space-around;
     }
     .status-head{
@@ -116,6 +132,8 @@
       overflow-x: scroll;
       height: 100%;
       justify-content: space-around;
+      margin-top: 0px;
+      text-align: center;
     }
     .status-head{
       display: none;

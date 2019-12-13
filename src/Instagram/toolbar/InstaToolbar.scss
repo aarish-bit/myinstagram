@@ -99,6 +99,9 @@
 
 
 @media only screen and (max-width: 414px) {
+  .InstaToolbar{
+    position: fixed;
+  }
   .insta-camera{
     width: 30px;
     height: 30px;

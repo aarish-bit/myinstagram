@@ -2,6 +2,11 @@
   margin-top: 85px;
 }
 
+.btn:focus{
+  outline: none;
+  box-shadow: none;
+}
+
 .instagram-content {
   display: flex;
   width: 100%;
@@ -38,11 +43,13 @@
     }
   }
 }
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 360px) {
   .second{
     width: 100%;
     top: 18%;
     left: 0;
+    // border-bottom: 1px solid #DBDBDB;
+    // height: 115px;
     .profile{
       display: none;
     }
@@ -53,8 +60,10 @@
 @media only screen and (min-width: 375px) {
   .second{
     width: 100%;
-    top: 15%;
+    top: 14%;
     left: 0;
+    height: 135px;
+    background-color: white;
     .profile{
       display: none;
     }
@@ -67,6 +76,7 @@
     width: 100%;
     top: 15%;
     left: 0;
+    height: 120px;
     .profile{
       display: none;
     }
@@ -79,6 +89,20 @@
     width: 86%;
     top: 28%;
     left: 7%;
+    height: 110px;
+    .profile{
+      display: none;
+    }
+  }
+  
+}
+
+@media only screen and (min-width: 731px) {
+  .second{
+    width: 74%;
+    top: 28%;
+    left: 13%;
+    height: 110px;
     .profile{
       display: none;
     }
@@ -155,8 +179,9 @@
   .second{
     top: 119px;
     left: 66%;
-    width: 30%;
+    width: 26%;
     position: fixed;
+    height: 100%;
     .profile{
       display: flex;
       margin-left: 25px;

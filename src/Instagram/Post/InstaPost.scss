@@ -148,11 +148,16 @@
   }
 }
 
+@media only screen and (min-width: 375px) {
+  .instapost{
+    margin-top: 135px;
+  }
+}
 
 @media only screen and (max-width: 414px) {
   .instapost{
     width: 100%;
-    margin-top: 100px;
+    margin-top: 135px;
     height: 100%;
   }
 
